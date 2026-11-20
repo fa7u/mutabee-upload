@@ -5,6 +5,6 @@ export default defineConfig({
   schema: "./drizzle/schema.ts",
   out: "./drizzle/migrations",
   dbCredentials: {
-    url: "https://jyzzvwlzeqcjnrteytut.supabase.co ?? ",
+    url: process.env.LOVABLE_DB_MIGRATION_URL ?? "",
   },
 });
